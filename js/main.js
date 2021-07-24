@@ -25,7 +25,7 @@ function wordReverse(word) {
 }
 */
 //soluzione ineficente
-var k = isPalindrome(prompt("Inserisci una parola"));
+/*var k = isPalindrome(prompt("Inserisci una parola"));
 
 function isPalindrome(word) {
   var z = word.split("");
@@ -43,3 +43,16 @@ function isPalindrome(word) {
   }
 }
 console.log(k);
+*/
+//soluzione otimale
+var j = prompt("Inserire una parola");
+
+console.log(palindromo(j));
+
+function palindromo(parola) {
+  parolaRevers = parola.split("").reverse().join("");
+  if (parolaRevers == parola) {
+    return "la parola è palindroma";
+  }
+  return "la parola non è palindroma";
+}
